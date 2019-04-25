@@ -43,7 +43,7 @@ fn main() {
         let read1 = receiver1.recv().unwrap();
         let read2 = receiver2.recv().unwrap();
         if !read1 && !read2 {
-            println!("!A && !B after {} iterations", iterations);
+            println!("Impossible result after {} iterations!", iterations);
             return;
         }
     }
